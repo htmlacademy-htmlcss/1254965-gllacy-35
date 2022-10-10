@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anna Vatockina](https://up.htmlacademy.ru/htmlcss/35/user/1254965).
-* Наставник: `Дмитрий Вашкевич` (https://htmlacademy.ru/profile/id116959).
+* Наставник: [Дмитрий Вашкевич] (https://up.htmlacademy.ru/profession/frontender/15/htmlcss/35/user/116959).
 
 ---
 
