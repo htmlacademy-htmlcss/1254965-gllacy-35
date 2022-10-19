@@ -7,12 +7,14 @@
   <body>
     <header class="page-header">
       <a class="navigation-logo">
-        <img src="#" alt="Логотип Gllacy Shop">
+        <img src="images/logo-gllacy-shop.svg" width="137" height="55.72" alt="Логотип Gllacy Shop">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link" href="catalog.html">Каталог
+              <img src="images/icon-catalog-navigation.svg" width="10" height="6" alt="Выбор категории в каталоге">
+            </a>
           </li>
           <li>
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -27,14 +29,20 @@
           </li>
           <li>
             <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
+              <img src="images/icon-loupe-navigation.svg" width="13.33" height="13.33" alt="Поиск по сайту">
+              <span class="visually-hidden">Поиск</span>
           </a>
           </li>
           <li>
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link" href="#">
+              <!--Вспомогательная иконка, можно добавить через стили в background-image-->
+              <img src="images/icon-input-navigation.svg" width="13.33" height="13.33" alt="Вход в личный кабинет">
+              Вход
+            </a>
           </li>
           <li>
             <a class="navigation-link" href="#">
+              <img src="images/icon-basket-navigation.svg" width="14.08" height="13.5" alt="Корзина">
               <p class="visually-hidden">Корзина</p>
               <span>2</span> товара
           </a>
@@ -68,11 +76,13 @@
       </section>
       <section class="product-gallery">
         <h2 class="visually-hidden">Слайдер</h2>
-        <img class="slider-image" src="#" alt="Нежный пломбир с клубничным джемом">
+        <img class="slider-image" src="images/strawberry-ice-cream.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
         <button class="slider-button slider-prev" type="button">
+          <img src="images/icon-arrow-left.svg" width="38" height="38" alt="Предыдущее мороженое">
           <span class="visually-hidden">Предыдущее мороженое</span>
         </button>
         <button class="slider-button slider-next" type="button">
+          <img src="images/icon-arrow-right.svg" width="38" height="38" alt="Следующее мороженое">
           <span class="visually-hidden">Следующее мороженое</span>
         </button>
         <ol class="slider-pagination">
@@ -95,19 +105,22 @@
       </section>
       <section class="socials">
         <h3 class="visually-hidden">Социальные сети</h3>
-      <ul class="socials-list">
+        <ul class="socials-list">
           <li class="socials-item">
             <a class="button" href="#">
-              <span class="visually-hidden">Твиттер</span>
+              <img src="images/icon-telegram.svg" width="24" height="24" alt="Телеграм">
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="button" href="#">
+              <img src="images/icon-vkontakte.svg" width="24" height="24" alt="ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="button" href="#">
+              <img src="images/icon-youtube.svg" width="24" height="24" alt="Ютуб">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -119,13 +132,13 @@
           <li>
             <h3 class="banner-item">Малинка даром!</h3>
             <p class="banner-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <img class="banner-img" src="#" alt="Топинг малина">
+            <img class="banner-img" src="images/raspberry-topping.png" width="219" height="268" alt="Топинг малина">
             <button class="banner-buttom-prize" type="button">Хочу подарок</button>
           </li>
           <li>
           <h3 class="banner-item">Маршмеллоу даром!</h3>
             <p class="banner-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <img class="banner-img" src="#" alt="Топинг маршмеллоу">
+            <img class="banner-img" src="images/marshmallow-topping.png" width="219" height="268" alt="Топинг маршмеллоу">
             <button class="banner-buttom-prize" type="button">Хочу подарок</button>
           </li>
         </ul>
@@ -136,45 +149,49 @@
         <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Сливочное мороженое сорт Малинка с малиновым джемом">
+          <img class="product-card-image" src="images/catalog/catalog-1-raspberry-ice-cream.jpg" width="270" height="184" alt="Сливочное мороженое сорт Малинка с малиновым джемом">
           <h3 class="product-card-title">Малинка</h3>
           <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
         </a>
         <span class="product-card-price">310 ₽/кг</span>
             <a class="product-card-button button" href="#">
+              <img src="images/icon-basket-navigation.svg" width="16" height="16" alt="Добавить в корзину">
               <span class="visually-hidden">Купить</span>
             </a>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Мороженое сорт Фисташка с кусочками шоколада">
+          <img class="product-card-image" src="images/catalog/catalog-2-pistachio-ice-cream.jpg" width="270" height="184" alt="Мороженое сорт Фисташка с кусочками шоколада">
           <h3 class="product-card-title">Фисташка</h3>
           <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
         </a>
         <span class="product-card-price">340 ₽/кг</span>
             <a class="product-card-button button" href="#">
+              <img src="images/icon-basket-navigation.svg" width="16" height="16" alt="Добавить в корзину">
               <span class="visually-hidden">Купить</span>
             </a>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Крем-брюле сорт Черника с черничным джемом">
+          <img class="product-card-image" src="images/catalog/catalog-3-blueberry-ice cream.jpg" width="270" height="184" alt="Крем-брюле сорт Черника с черничным джемом">
           <h3 class="product-card-title">Черника</h3>
           <p class="product-card-text">Крем-брюле с черничным джемом</p>
         </a>
         <span class="product-card-price">330 ₽/кг</span>
             <a class="product-card-button button" href="#">
+              <img src="images/icon-basket-navigation.svg" width="16" height="16" alt="Добавить в корзину">
               <span class="visually-hidden">Купить</span>
             </a>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Ванильный пломбир сорт Бабл-гам со сладкой посыпкой">
+          <img class="product-card-image" src="images/catalog/catalog-4-bubble-gum-ice cream.jpg" width="270" height="184" alt="Ванильный пломбир сорт Бабл-гам со сладкой посыпкой">
           <h3 class="product-card-title">Бабл-гам</h3>
           <p class="product-card-text">Ванильный пломбир со сладкой посыпкой</p>
         </a>
         <span class="product-card-price">320 ₽/кг</span>
             <a class="product-card-button button" href="#">
+              <img src="images/icon-basket-navigation.svg" width="16" height="16" alt="Добавить в корзину">
               <span class="visually-hidden">Купить</span>
             </a>
         </li>
@@ -185,19 +202,20 @@
       <h3 class="visually-hidden">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="advantages-list">
         <li class="advantages-item">
-          <img class="advantages-item-image" src="#" alt="Круглая векторная иконка с силуэтом эскимо на палочке">
+          <!--Декоративные иконки для всего раздела, можно добавить через стили-->
+          <img class="advantages-item-image" src="images/icon-ice-cream.svg" width="48" height="48" alt="Круглая векторная иконка с силуэтом эскимо на палочке">
           <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
         </li>
         <li class="advantages-item">
-          <img class="advantages-item-image" src="#" alt="Круглая векторная иконка с древестным листком, которое характеризует натуральное производство">
+          <img class="advantages-item-image" src="images/icon-leaf.svg" width="48" height="48" alt="Круглая векторная иконка с древестным листком, которое характеризует натуральное производство">
           <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
         </li>
         <li class="advantages-item">
-          <img class="advantages-item-image" src="#" alt="Круглая векторная иконка головы коровы, которая характеризвует закуп ингридентов на фермерских хозяйствах">
+          <img class="advantages-item-image" src="images/icon-cow.svg" width="48" height="48" alt="Круглая векторная иконка головы коровы, которая характеризвует закуп ингридентов на фермерских хозяйствах">
           <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
         </li>
         <li class="advantages-item">
-          <img class="advantages-item-image" src="#" alt="Круглая векторная иконка с термоментром, которая характеризует качество хранения продукции">
+          <img class="advantages-item-image" src="images/icon-thermometer.svg" width="48" height="48" alt="Круглая векторная иконка с термоментром, которая характеризует качество хранения продукции">
           <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
@@ -222,7 +240,7 @@
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="appointment-form-date">
           <label class="form-label" for="appointment-date">Дата</label>
-          <img class="appointment-img" src="#" alt="Дополнительная информация">
+          <img class="appointment-img" src="images/icon-info.svg" width="14" height="14" alt="Дополнительная информация">
           <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
         </p>
         <p class="appointment-form-phone">
@@ -231,7 +249,7 @@
         </p>
         <p class="appointment-form-address">
           <label for="appointment-address">Адрес</label>
-          <img class="appointment-img" src="#" alt="Дополнительная информация">
+          <img class="appointment-img" src="images/icon-info.svg" width="14" height="14" alt="Дополнительная информация">
           <input type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
         <button class="button" type="submit">Отправить</button>
@@ -252,19 +270,22 @@
     <footer class="page-footer">
       <section class="socials">
         <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="socials-list">
+        <ul class="socials-list">
           <li class="socials-item">
             <a class="button" href="#">
-              <span class="visually-hidden">Твиттер</span>
+              <img src="images/icon-telegram.svg" width="24" height="24" alt="Телеграм">
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="button" href="#">
+              <img src="images/icon-vkontakte.svg" width="24" height="24" alt="ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="button" href="#">
+              <img src="images/icon-youtube.svg" width="24" height="24" alt="Ютуб">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -274,7 +295,8 @@
         <h2 class="visually-hidden">Для поставщиков</h2>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
-            <img class="footer-navigation-img" src="#" alt="Векторная иконка в форме сердца">
+            <!--Декоративная иконка, можно добавить через стили-->
+            <img class="footer-navigation-img" src="images/heart-symbol.svg" width="16" height="16" alt="Векторная иконка в форме сердца">
             <a class="footer-navigation-link" href="#">Для поставщиков</a>
           </li>
           <li class="footer-navigation-item">
@@ -291,7 +313,7 @@
       <section class="footer-htmlacademy">
         <h2 class="visually-hidden">Разработчики</h2>
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
-          <img src="#" alt="Логотип HTML Academy">
+          <img src="images/logo-htmlacademy.svg" width="93" height="26.7" alt="Логотип HTML Academy">
         </a>
           <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>
