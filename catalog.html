@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Каталог Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+     <!-- Меню -->
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
         <img src="images/logo-gllacy-shop.svg" width="137" height="55.72" alt="Логотип Gllacy Shop">
@@ -42,13 +44,14 @@
           <li>
             <a class="navigation-link" href="#">
               <img src="images/icon-basket-navigation.svg" width="14.08" height="13.5" alt="Корзина">
-              <p class="visually-hidden">Корзина</p>
+              <span class="visually-hidden">Корзина</span>
               <span>2</span> товара
           </a>
           </li>
         </ul>
       </nav>
     </header>
+     <!-- Каталог. Фильтр -->
     <main class="main-inner">
       <header class="inner-header">
         <ul class="breadcrumbs">
@@ -79,10 +82,10 @@
               <div class="range-scale">
                 <div class="range-bar">
                   <button class="range-toggle toggle-min">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                    <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
                   <button class="range-toggle toggle-max">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                    <span class="visually-hidden">Изменить максимальную цену</span>
                   </button>
                 </div>
               </div>
@@ -162,6 +165,7 @@
         <button class="button" type="submit">Применить</button>
       </form>
     </section>
+     <!-- Галерея -->
     <section class="product-gallery">
       <h2 class="visually-hidden">Товары</h2>
       <ul class="product-list">
@@ -311,6 +315,7 @@
       </li>
     </ul>
     <button class="button pagination-show-more" type="button">Показать ещё</button>
+    <!-- Пагинация -->
     <ul class="pagination">
       <li class="pagination-item">
         <a class="pagination-link pagination-prev pagination-disabled">
@@ -345,19 +350,19 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="socials-list">
       <li class="socials-item">
-        <a class="button" href="#">
+        <a class="socials-item-button" href="#">
           <img src="images/icon-telegram.svg" width="24" height="24" alt="Телеграм">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="socials-item">
-        <a class="button" href="#">
+        <a class="socials-item-button" href="#">
           <img src="images/icon-vkontakte.svg" width="24" height="24" alt="ВКонтакте">
           <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="socials-item">
-        <a class="button" href="#">
+        <a class="socials-item-button" href="#">
           <img src="images/icon-youtube.svg" width="24" height="24" alt="Ютуб">
           <span class="visually-hidden">Ютуб</span>
         </a>
