@@ -26,7 +26,18 @@ body {
   background: #FEAFC3;
   color: #2D3440;
 }
-/* Header */
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  background: #FFFFFF;
+  text-decoration: none;
+  border-radius: 26px;
+}
+/* Меню */
 .navigation-list {
   color: #2D3440;
   line-height: 20px;
@@ -56,9 +67,6 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
-.button {
-  font-weight: 700;
-}
 .slider-background {
   background: #FFCBD8;
   border-radius: 100%;
@@ -69,7 +77,7 @@ body {
   background: #FCFCFC;
   border-radius: 100px;
 }
-/* Main sections */
+/* Общие разделы */
 .section-title {
   font-weight: 900;
   font-size: 32px;
@@ -87,6 +95,7 @@ body {
   font-size: 24px;
   line-height: 30px;
 }
+/* Галерея */
 .product-card {
   background: #FCFCFC;
   border-radius: 8px;
@@ -107,11 +116,148 @@ body {
 .product-card-text {
   color: #565C66;
 }
-.index-ceo {
-  background: #FEAFC3 url("images/index-seo-background.jpg");
-  color: #2D3440;
-}
+/* Преимущества */
 .advantages {
+  background: #FEAFC3 url("../images/index-seo-background.jpg") 0 0;
+  background-size: cover;
+  color: #2D3440;
+  border-radius: 16px;
+  padding: 24px;
+}
+.index-ceo {
   background: #FFFFFF;
   border-radius: 16px;
+  padding: 56px 40px;
+}
+.advantages-title {
+  text-align: center;
+}
+.advantages-description {
+  color: #565C66;
+}
+/* Новости и подписаться */
+.aside-news {
+  background: #FFFFFF url("../images/news-background.jpg") no-repeat 0 0;
+  background-size: cover;
+  border-radius: 16px;
+  justify-content: center;
+}
+.aside-news-lead {
+  line-height: 20px;
+  color: #565C66;
+}
+.aside-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.subscribe {
+  background: #FFFFFF url("../images/subscribe-background.png") no-repeat 0 0;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 6px;
+}
+.subscribe-background {
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+.subscribe-text {
+  color: #565C66;
+}
+/* Доставка */
+.appointment {
+  background: #FFFFFF url("../images/appointment-background.jpg") no-repeat 0 0;
+  background-size: cover;
+  border-radius: 16px;
+}
+.appointment-title, .appointment-text {
+  text-align: left;
+}
+.appointment-text, .appointment-form {
+  color: #565C66;
+}
+.appointment-form {
+  background: #FCFCFC;
+  border-radius: 8px;
+}
+.appointment-form label {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+}
+.form-page input {
+  font-weight: 400;
+  line-height: 20px;
+  color: #B9B9B9;
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+/* Контакты */
+.main-contacts {
+  background: #FFFFFF url("../images/main-contacts-background.jpg") no-repeat 0 0;
+  background-size: cover;
+  border-radius: 16px;
+}
+.main-contacts-item {
+  background: #FCFCFC;
+  border-radius: 8px;
+  text-align: left;
+}
+.main-contacts-text {
+  color: #565C66;
+}
+.main-contacts-address, .main-contacts-phone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+.main-contacts-phone-time {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+/* Подвал */
+.footer-navigation-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #2D3440;
+}
+.footer-navigation-link span {
+  font-weight: 700;
+}
+.about-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.htmlacademy-link {
+  color: #2D3440;
+}
+/* Каталог. Фильтр */
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+.inner-header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+/* Пагинация */
+.pagination-link {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
 }
