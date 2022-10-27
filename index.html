@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -43,7 +44,7 @@
           <li>
             <a class="navigation-link" href="#">
               <img src="images/icon-basket-navigation.svg" width="14.08" height="13.5" alt="Корзина">
-              <p class="visually-hidden">Корзина</p>
+              <span class="visually-hidden">Корзина</span>
               <span>2</span> товара
           </a>
           </li>
@@ -76,7 +77,9 @@
       </section>
       <section class="product-gallery">
         <h2 class="visually-hidden">Слайдер</h2>
-        <img class="slider-image" src="images/strawberry-ice-cream.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
+        <div class="slider-background">
+          <img class="slider-image" src="images/strawberry-ice-cream.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
+        </div>
         <button class="slider-button slider-prev" type="button">
           <img src="images/icon-arrow-left.svg" width="38" height="38" alt="Предыдущее мороженое">
           <span class="visually-hidden">Предыдущее мороженое</span>
@@ -126,26 +129,26 @@
           </li>
         </ul>
       </section>
-      <section class="banner-item">
-        <h2 class="banner-title">Заказывайте мороженое и получайте подарки!</h2>
+      <section class="banner">
+        <h2 class="section-title banner-title">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="banner-list">
-          <li>
-            <h3 class="banner-item">Малинка даром!</h3>
-            <p class="banner-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <li class="banner-item">
+            <h3 class="banner-item-title">Малинка даром!</h3>
+            <p class="banner-item-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <img class="banner-img" src="images/raspberry-topping.png" width="219" height="268" alt="Топинг малина">
-            <button class="banner-buttom-prize" type="button">Хочу подарок</button>
+            <button class="banner-buttom-prize button" type="button">Хочу подарок</button>
           </li>
-          <li>
-          <h3 class="banner-item">Маршмеллоу даром!</h3>
+          <li class="banner-item">
+          <h3 class="banner-item-title">Маршмеллоу даром!</h3>
             <p class="banner-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <img class="banner-img" src="images/marshmallow-topping.png" width="219" height="268" alt="Топинг маршмеллоу">
-            <button class="banner-buttom-prize" type="button">Хочу подарок</button>
+            <button class="banner-buttom-prize button" type="button">Хочу подарок</button>
           </li>
         </ul>
       </section>
       <section class="product-gallery">
         <h2 class="visually-hidden">Товары</h2>
-        <p class="product-gallery-title">Попробуйте самые популярные вкусы нашего мороженого</p>
+        <p class="section-title product-gallery-title">Попробуйте самые популярные вкусы нашего мороженого</p>
         <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -197,9 +200,10 @@
         </li>
       </ul>
     </section>
+    <div class="index-ceo">
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <h3 class="visually-hidden">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+      <h3 class="section-title advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="advantages-list">
         <li class="advantages-item">
           <!--Декоративные иконки для всего раздела, можно добавить через стили-->
@@ -220,6 +224,7 @@
         </li>
       </ul>
     </section>
+  </div>
     <article class="aside-news">
       <h2 class="visually-hidden">Новости</h2>
       <p class="aside-news-lead">Новое в нашем блоге</p>
@@ -234,7 +239,7 @@
     </form>
     </section>
     <section class="appointment">
-      <h2 class="appointment-title">Доставка любимого мороженого на дом</h2>
+      <h2 class="section-title appointment-title">Доставка любимого мороженого на дом</h2>
       <p class="appointment-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>

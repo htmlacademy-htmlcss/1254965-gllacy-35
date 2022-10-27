@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/inter-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/inter-700.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url(fonts/inter-900.woff2) format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background: #FEAFC3;
+  color: #2D3440;
+}
+/* Header */
+.navigation-list {
+  color: #2D3440;
+  line-height: 20px;
+}
+.navigation-link, .navigation-phone {
+  font-weight: 400;
+  color: #2D3440;
+  text-decoration: none;
+  text-align: center;
+}
+.navigation-phone {
+  font-weight: 700;
+}
+.navigation-user .navigation-link {
+  font-size: 14px;
+}
+/* Main */
+.product-item-text{
+  text-align: left;
+}
+.product-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+.product-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+.button {
+  font-weight: 700;
+}
+.slider-background {
+  background: #FFCBD8;
+  border-radius: 100%;
+  width: 312px;
+  height: 312px;
+}
+.slider-pagination-button {
+  background: #FCFCFC;
+  border-radius: 100px;
+}
+/* Main sections */
+.section-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.banner-title, .product-gallery-title {
+  text-align: center;
+}
+.banner-item {
+  background: #FF7799;
+  border-radius: 16px;
+}
+.banner-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.product-card {
+  background: #FCFCFC;
+  border-radius: 8px;
+  top: 15.36%;
+}
+.product-card {
+  text-align: center;
+}
+.product-card-link {
+  text-decoration: none;
+}
+.product-card-title, .product-card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+.product-card-text {
+  color: #565C66;
+}
+.index-ceo {
+  background: #FEAFC3 url("images/index-seo-background.jpg");
+  color: #2D3440;
+}
+.advantages {
+  background: #FFFFFF;
+  border-radius: 16px;
+}
