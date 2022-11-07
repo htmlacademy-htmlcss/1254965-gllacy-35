@@ -19,7 +19,14 @@
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -37,6 +44,7 @@ body {
   text-decoration: none;
   border-radius: 26px;
 }
+
 /* Меню */
 .navigation-list {
   color: #2D3440;
@@ -54,7 +62,11 @@ body {
 .navigation-user .navigation-link {
   font-size: 14px;
 }
+
 /* Main */
+.main-container {
+  flex-grow: 1;
+}
 .product-item-text{
   text-align: left;
 }
@@ -77,6 +89,7 @@ body {
   background: #FCFCFC;
   border-radius: 100px;
 }
+
 /* Общие разделы */
 .section-title {
   font-weight: 900;
@@ -95,6 +108,7 @@ body {
   font-size: 24px;
   line-height: 30px;
 }
+
 /* Галерея */
 .product-card {
   background: #FCFCFC;
@@ -135,6 +149,7 @@ body {
 .advantages-description {
   color: #565C66;
 }
+
 /* Новости и подписаться */
 .aside-news {
   background: #FFFFFF url("../images/news-background.jpg") no-repeat 0 0;
@@ -164,6 +179,7 @@ body {
 .subscribe-text {
   color: #565C66;
 }
+
 /* Доставка */
 .appointment {
   background: #FFFFFF url("../images/appointment-background.jpg") no-repeat 0 0;
@@ -220,6 +236,7 @@ body {
   line-height: 20px;
   color: #565C66;
 }
+
 /* Подвал */
 .footer-navigation-link {
   font-size: 14px;
@@ -238,6 +255,7 @@ body {
 .htmlacademy-link {
   color: #2D3440;
 }
+
 /* Каталог. Фильтр */
 .breadcrumbs-link {
   font-weight: 700;
@@ -255,6 +273,7 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
 /* Пагинация */
 .pagination-link {
   line-height: 20px;
