@@ -46,9 +46,21 @@ body {
 }
 
 /* Меню */
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
 .navigation-list {
   color: #2D3440;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 422px;
+  margin-right: 164px;
+}
+.navigation-user {
+  width: 431px;
 }
 .navigation-link, .navigation-phone {
   font-weight: 400;
@@ -62,7 +74,10 @@ body {
 .navigation-user .navigation-link {
   font-size: 14px;
 }
-
+.navigation-logo {
+  width: 137px;
+  margin-right: 16px;
+}
 /* Main */
 .main-container {
   flex-grow: 1;
