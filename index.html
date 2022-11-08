@@ -55,36 +55,38 @@
     </header>
 
     <!-- Main -->
+    <!-- Слайдер -->
     <main class="main-container main-index">
+      <div class="page-container">
       <h1 class="visually-hidden">Магазин мороженого "Gllacy Shop"</h1>
       <section class="product">
         <h2 class="visually-hidden">Популярное мороженое</h2>
       </section>
+      <div class="product-slider-container">
       <section class="product-item">
         <ul class="product-item-text">
-          <li>
+          <li class="product-list-text">
             <h3 class="product-title">Нежный пломбир с клубничным джемом</h3>
             <p class="product-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
             <button class="product-card-button button" type="button">Заказать</button>
           </li>
-          <li>
+          <!-- <li class="product-list-text">
             <h3 class="product-title">Сливочное мороженое со вкусом банана</h3>
             <p class="product-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
             <button class="product-card-button button" type="button">Заказать</button>
           </li>
-          <li>
+          <li class="product-list-text">
             <h3 class="product-title">Карамельный пломбир с маршмеллоу</h3>
             <p class="product-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
             <button class="product-card-button button" type="button">Заказать</button>
-          </li>
+          </li> -->
         </ul>
       </section>
-      <!-- Слайдер -->
       <section class="product-gallery">
         <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slider-background">
+        <div class="slider-list-container">
+        <section class="slider-list">
           <img class="slider-image" src="images/strawberry-ice-cream.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
-        </div>
         <button class="slider-button slider-prev" type="button">
           <img src="images/icon-arrow-left.svg" width="38" height="38" alt="Предыдущее мороженое">
           <span class="visually-hidden">Предыдущее мороженое</span>
@@ -93,6 +95,16 @@
           <img src="images/icon-arrow-right.svg" width="38" height="38" alt="Следующее мороженое">
           <span class="visually-hidden">Следующее мороженое</span>
         </button>
+        </section>
+      <section class="slider-list-small">
+        <img class="slider-image" src="images/banana-ice-cream.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
+      </section>
+      <section class="slider-list-small">
+        <img class="slider-image" src="images/caramel-ice-cream.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
+      </section>
+    </div>
+  </div>
+      <div class="pagination-socials-container">
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -134,6 +146,8 @@
           </li>
         </ul>
       </section>
+      </div>
+
       <!-- Общие разделы -->
       <section class="banner">
         <h2 class="section-title banner-title">Заказывайте мороженое и получайте подарки!</h2>
@@ -152,6 +166,7 @@
           </li>
         </ul>
       </section>
+
       <!-- Галерея -->
       <section class="product-gallery">
         <h2 class="visually-hidden">Товары</h2>
@@ -233,6 +248,7 @@
         </ul>
       </div>
     </section>
+
      <!-- Новости и подписаться -->
     <article class="aside-news">
       <h2 class="visually-hidden">Новости</h2>
@@ -249,6 +265,7 @@
     </form>
       </div>
     </section>
+
     <!-- Доставка -->
     <section class="appointment">
       <h2 class="section-title appointment-title">Доставка любимого мороженого на дом</h2>
@@ -272,6 +289,7 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
+
     <!-- Контакты -->
     <section class="main-contacts">
       <div class="main-contacts-item">
@@ -286,7 +304,9 @@
         <button class="button" type="submit">Форма обратной связи</button>
       </div>
     </section>
+  </div>
     </main>
+
     <!-- Подвал -->
     <footer class="page-footer">
       <section class="socials">
