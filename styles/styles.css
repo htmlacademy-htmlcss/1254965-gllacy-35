@@ -85,6 +85,7 @@ body {
   width: 431px;
   margin-right: 0;
 }
+
 .navigation-link {
   display: block;
   padding: 18px 8px;
@@ -255,6 +256,7 @@ body {
 .banner-item-title {
   margin-bottom: 28px;
 }
+
 .banner-item-text {
   margin-bottom: 28px;
 }
@@ -319,18 +321,22 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .advantages-item:nth-child(2) {
- margin-bottom: 0;
- margin-right: 32px;
+  margin-bottom: 0;
+  margin-right: 32px;
 }
+
 .advantages-item:nth-child(4) {
   margin-bottom: 0;
- }
- .advantages-item:nth-child(1) {
+}
+
+.advantages-item:nth-child(1) {
   margin-right: 32px;
- }
+}
+
 .advantages-item-image {
-margin-right: 16px;
+  margin-right: 16px;
 }
 
 /* Новости и подписаться */
@@ -390,6 +396,7 @@ margin-right: 16px;
   margin-bottom: 44px;
   width: 506px;
 }
+
 .subscribe-from {
   display: flex;
   justify-content: space-between;
@@ -412,17 +419,20 @@ margin-right: 16px;
   margin-bottom: 80px;
 }
 
-.appointment-content {
-  margin-left: 100px;
-  margin-top: 167px;
-}
-
 .appointment-title {
   width: 356px;
+  margin: 0;
+  padding: 0;
+  padding-top: 168px;
+  padding-left: 100px;
+  margin-bottom: 24px;
 }
 
 .appointment-text {
-  width: 371px;
+  width: 370px;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
 }
 
 .appointment-title,
@@ -438,18 +448,27 @@ margin-right: 16px;
 .appointment-form {
   width: 500px;
   height: 406px;
-  margin: 64px 64px 64px;
-}
-
-.appointment-form {
   background: #FCFCFC;
   border-radius: 8px;
+  margin-bottom: 64px;
+  margin-right: 64px;
+  margin-top: 64px;
+}
+
+.appointment-form > p {
+  padding-left: 40px;
 }
 
 .appointment-form label {
   font-weight: 700;
   line-height: 20px;
   color: #2D3440;
+}
+
+.appointment-form-text {
+  padding-top: 40px;
+  width: 380px;
+  margin-bottom: 32px;
 }
 
 .form-page input {
@@ -459,6 +478,11 @@ margin-right: 16px;
   background: #FFFFFF;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+}
+
+.appointment-button {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Контакты */
@@ -472,16 +496,26 @@ margin-right: 16px;
 }
 
 .main-contacts-item {
+  display: flex;
+  flex-direction: column;
   background: #FCFCFC;
   border-radius: 8px;
   text-align: left;
-  width: 343px;
-  height: 364px;
-  margin: 64px 64px 64px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 42px;
+  margin-bottom: 64px;
+  margin-left: 64px;
+  margin-top: 64px;
 }
 
 .main-contacts-text {
   color: #565C66;
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  margin-right: 124px;
+  margin-bottom: 12px;
 }
 
 .main-contacts-address,
@@ -492,12 +526,27 @@ margin-right: 16px;
   line-height: 24px;
   text-decoration: none;
   color: #2D3440;
+  margin: 0;
+  padding: 0;
+}
+
+.main-contacts-address-text {
+  width: 264px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .main-contacts-phone-time {
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+  margin-bottom: 32px;
+}
+
+.main-contacts-button {
+  width: 250px;
+  height: 44px;
 }
 
 /* Подвал */
@@ -507,6 +556,7 @@ margin-right: 16px;
   height: 153px;
   width: 1170px;
   margin: 0 auto;
+  margin-top: 48px;
 }
 
 .footer-navigation-link {
@@ -520,18 +570,42 @@ margin-right: 16px;
 }
 
 .footer-navigation-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-right: 200px;
+  height: 68px;
+  width: 356px;
+  list-style-type: none;
+}
+
+.footer-navigation-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  margin-right: 24px;
+
+}
+
+.footer-navigation-item:nth-child(2) {
+  margin: 0;
+}
+
+.footer-navigation-item:nth-child(4) {
+  margin: 0;
+}
+
+.footer-navigation-item-element {
+  margin-left: -30px;
+}
+
+.footer-navigation-img {
+  margin-right: 8px;
 }
 
 .footer-navigation-link span {
   font-weight: 700;
-}
-
-.about-text {
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .htmlacademy-link {
@@ -550,17 +624,35 @@ margin-right: 16px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: 4px;
-  margin-right: 200px;
+}
+
+.social-media-footer {
+  margin-right: 300px;
 }
 
 .social-media-item-button:last-child {
   margin-right: 40px;
 }
 
+.social-media-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
 .footer-htmlacademy {
-  margin-right: 14px;
-  margin-bottom: 48px;
+  margin-left: 200px;
+}
+
+.about-text {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Каталог. Фильтр */
@@ -607,6 +699,7 @@ margin-right: 16px;
   line-height: 24px;
   color: #2D3440;
 }
+
 .product-card-title {
   margin: 0;
   padding: 0;
@@ -638,6 +731,7 @@ margin-right: 16px;
   width: 32px;
   height: 32px;
 }
+
 .product-card-price-conteiner {
   display: flex;
   justify-content: space-between;
