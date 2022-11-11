@@ -124,7 +124,9 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
-
+.main-inner {
+  padding-top: 68px;
+}
 /* Слайдер */
 .product-slider-container {
   display: flex;
@@ -656,18 +658,35 @@ body {
 }
 
 /* Каталог. Фильтр */
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
 .breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+  margin: 0;
+  padding: 0;
+  margin-right: 28px;
 }
 
 .inner-header-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.catalog-products {
+  margin-bottom: 44px;
 }
 
 .catalog-filter {
@@ -675,6 +694,11 @@ body {
   line-height: 20px;
   width: 823px;
   margin-right: 347px;
+}
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Каталог продукты */
@@ -686,8 +710,15 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
+  margin-right: 30px;
 }
-
+.product-card:nth-child(4n) {
+  margin-right: 0;
+}
+.product-card:nth-last-of-type(-n+4) {
+  margin-bottom: 0;
+}
 .product-card-link {
   text-decoration: none;
 }
@@ -713,10 +744,6 @@ body {
   margin-bottom: 16px;
   padding-left: 40px;
   width: 190px;
-}
-
-.product-card-image {
-  margin-bottom: 16px;
 }
 
 .product-card-price {
@@ -745,10 +772,41 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.product-list-footer {
+  margin-bottom: 58px;
+}
 
 /* Пагинация */
+.pagination-container {
+  display: flex;
+  margin-bottom: 80px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.pagination-show-more {
+  margin: 0 auto;
+  width: 179px;
+height: 44px;
+}
+.pagination-item:not(:last-child) {
+  margin-right: 14px;
+}
 .pagination-link {
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+}
+.footer-navigation-link {
+  width: 168px;
+}
+.page-footer-container-line {
+  border-top: 1px solid rgba(252, 252, 252, 0.3);
+  padding: 48px;
+  margin-top: 0;
 }
