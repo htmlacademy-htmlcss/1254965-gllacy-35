@@ -402,8 +402,9 @@ body {
 }
 
 .subscribe-from {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 332px 152px;
+  gap: 8px;
   align-items: center;
   padding-left: 26px;
   margin-bottom: 28px;
@@ -411,7 +412,10 @@ body {
   width: 506px;
   height: 52px;
 }
-
+.subscribe-button {
+  width: 152px;
+  height: 44px;
+}
 /* Доставка */
 .appointment {
   background: #FFFFFF url("../images/appointment-background.jpg") no-repeat 0 0;
@@ -419,6 +423,7 @@ body {
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 534px;
   margin-bottom: 80px;
 }
@@ -427,7 +432,6 @@ body {
   width: 356px;
   margin: 0;
   padding: 0;
-  padding-top: 168px;
   padding-left: 100px;
   margin-bottom: 24px;
 }
@@ -443,24 +447,42 @@ body {
 .appointment-text {
   text-align: left;
 }
+.appointment-form-content {
+  width: 500px;
+  background: #FCFCFC;
+  border-radius: 8px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-right: 64px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  min-height: 406px;
+}
 
 .appointment-text,
 .appointment-form {
   color: #565C66;
 }
-
 .appointment-form {
-  width: 500px;
-  height: 406px;
-  background: #FCFCFC;
-  border-radius: 8px;
-  margin-bottom: 64px;
-  margin-right: 64px;
-  margin-top: 64px;
-}
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 16px 20px;
 
-.appointment-form > p {
-  padding-left: 40px;
+}
+.appointment-form-address {
+  grid-column: 1 / -1;
+}
+.appointment-button {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.appointment-img {
+  display: none;
 }
 
 .appointment-form label {
@@ -470,6 +492,7 @@ body {
 }
 
 .appointment-form-text {
+  margin: 0;
   padding-top: 40px;
   width: 380px;
   margin-bottom: 32px;
@@ -484,10 +507,12 @@ body {
   border-radius: 4px;
 }
 
+
 .appointment-button {
-  display: block;
-  margin: 0 auto;
+  width: 152px;
+  height: 44px;
 }
+
 
 /* Контакты */
 .main-contacts {
