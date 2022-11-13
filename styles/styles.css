@@ -414,10 +414,12 @@ body {
   width: 506px;
   height: 52px;
 }
+
 .subscribe-button {
   width: 152px;
   height: 44px;
 }
+
 /* Доставка */
 .appointment {
   background: #FFFFFF url("../images/appointment-background.jpg") no-repeat 0 0;
@@ -449,6 +451,7 @@ body {
 .appointment-text {
   text-align: left;
 }
+
 .appointment-form-content {
   width: 500px;
   background: #FCFCFC;
@@ -465,24 +468,29 @@ body {
 .appointment-form {
   color: #565C66;
 }
+
 .appointment-form {
   display: grid;
   grid-template-columns: 117px 287px;
   gap: 16px 20px;
 
 }
+
 .appointment-form-address {
   grid-column: 1 / -1;
 }
+
 .appointment-button {
   grid-column: 1 / -1;
   justify-self: center;
 }
+
 .field-group {
   display: flex;
   flex-direction: column;
   margin: 0;
 }
+
 .appointment-img {
   display: none;
 }
@@ -736,10 +744,28 @@ body {
 
 .product-card {
   background: #FCFCFC;
+  display: grid;
+  flex-direction: column;
   border-radius: 8px;
-  text-align: center;
+}
+
+.product-card-content {
+  padding-left: 40px;
+  padding-right: 40px;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.product-card-price-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  margin-bottom: 24px;
+  margin-right: 40px;
 }
 
 .product-card-link {
@@ -764,31 +790,7 @@ body {
   color: #565C66;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
-  padding-left: 40px;
-  width: 190px;
-}
-
-.product-card-price {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-.product-card-button {
-  margin: 0;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-}
-
-.product-card-price-conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-left: 40px;
-  margin-bottom: 24px;
-  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .product-list-footer {
