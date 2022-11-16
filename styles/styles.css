@@ -637,21 +637,25 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
 .subscribe-button {
   border-radius: 26px;
   background: #FF2F64;
   color: #FCFCFC;
 }
+
 .subscribe-button:hover {
   background: rgba(252, 252, 252, 0.3);
   border: 4px solid #FF2F64;
   color: #2D3440;
 }
+
 .subscribe-button:focus {
   background: #FF2F64;
   border: 2px solid #2D3440;
   color: #2D3440;
 }
+
 /* Доставка */
 .appointment {
   background: #FFFFFF url("../images/appointment-background.jpg") no-repeat 0 0;
@@ -750,6 +754,7 @@ body {
   width: 380px;
   margin-bottom: 32px;
 }
+
 .input-content {
   padding: 14px 16px 14px 16px;
   font-family: 'Inter';
@@ -768,10 +773,12 @@ body {
   background: #FFFFFF;
   border: 1px solid #2D3440;
 }
+
 .input-content:focus {
   border: 2px solid #2D3440;
 }
-.input-content::placeholder{
+
+.input-content::placeholder {
   color: #B9B9B9;
 }
 
@@ -957,8 +964,8 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 27.8px;
-  height: 27.8px;
+  width: 27px;
+  height: 27px;
   margin-right: 16px;
 }
 
@@ -1181,3 +1188,82 @@ body {
   padding: 48px;
   margin-top: 0;
 }
+
+/* Фильтр и сортировка */
+.catalog-filter-group {
+  width: 196px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #C69BAA;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #565C66;
+  border-radius: 2px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/filter-point-static.svg);
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+
+}
+
+.range-toggle:hover {
+  background-image: url(../images/filter-point-hover.svg);
+}
+
+.range-toggle:focus {
+  background-image: url(../images/filter-point-focus.svg);
+}
+
+.range-toggle:active {
+  background-image: url(../images/filter-point-active.svg);
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -14px;
+}
+
+.range-wrapper-inputs {
+  display: none;
+}
+
+.catalog-filter-title {
+  margin-bottom: 8px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}
+
+/* .product-card-link-image {
+  width: 168px;
+  height: 168px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.product-card-image {
+  width: auto;
+  object-fit: none;
+} */
