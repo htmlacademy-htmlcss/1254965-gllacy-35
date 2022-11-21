@@ -281,6 +281,7 @@ body {
   font-size: 36px;
   line-height: 46px;
   margin-bottom: 24px;
+  margin-top: 136px;
 }
 
 .product-description {
@@ -332,10 +333,10 @@ body {
 }
 
 .slider-pagination-button {
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   background: #FCFCFC;
-  border-radius: 100px;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
   opacity: 0.3;
@@ -350,9 +351,11 @@ body {
 
 .slider-pagination-button:hover {
   border: 1px solid #FCFCFC;
+  width: 14px;
+  height: 14px;
   background: rgba(252, 252, 252, 0.3);
-  border-radius: 100px;
   box-sizing: border-box;
+  border-image-width: 0;
 }
 
 .slider-pagination-button:focus {
@@ -970,8 +973,8 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 27px;
-  height: 27px;
+  width: 28px;
+  height: 28px;
   margin-right: 16px;
 }
 
