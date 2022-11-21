@@ -91,7 +91,7 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog-sorting-content">
               <p class="catalog-filter-title">Сортировка:</p>
-              <div class="catalog-filter-background">
+              <div>
                 <select class="select-control">
                   <option value="popular" selected>по популярности</option>
                   <option value="cheap">сначала дешёвое</option>
@@ -124,27 +124,31 @@
               <legend class="catalog-filter-title">Жирность:</legend>
               <div class="catalog-filter-background fat-content-background">
                 <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-radio-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="0%">
-                      0%
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="0%">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">0%</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-radio-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="to-10%" checked>
-                      до 10%
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="to-10%" checked>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">до 10%</span>
                     </label>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-radio-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="to-30%">
-                      до 30%
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="to-30%">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">до 30%</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-radio-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="above-30%">
-                      выше 30%
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="above-30%">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">выше 30%</span>
                     </label>
                   </li>
                 </ul>
@@ -156,32 +160,37 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="chocolate" checked>
-                      шоколадные
+                      <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">шоколадные</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="sugar-sprinkles" checked>
-                      сахарные посыпки
+                      <input class="visually-hidden control-input" type="checkbox" name="sugar-sprinkles" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">сахарные посыпки</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="fruit">
-                      фрукты
+                      <input class="visually-hidden control-input" type="checkbox" name="fruit">
+                      <span class="control-mark"></span>
+                      <span class="control-label">фрукты</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="syrups">
-                      сиропы
+                      <input class="visually-hidden control-input" type="checkbox" name="syrups">
+                      <span class="control-mark"></span>
+                      <span class="control-label">сиропы</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="jams">
-                      джемы
+                      <input class="visually-hidden control-input" type="checkbox" name="jams">
+                      <span class="control-mark"></span>
+                      <span class="control-label">джемы</span>
                     </label>
                   </li>
                 </ul>
