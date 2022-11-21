@@ -966,8 +966,8 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 27px;
-  height: 27px;
+  width: 27.5px;
+  height: 27.5px;
   margin-right: 16px;
 }
 
@@ -1037,16 +1037,46 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   font-size: 14px;
   line-height: 20px;
-  width: 823px;
-  margin-right: 347px;
+  width: 840px;
+  margin-right: 346px;
 }
 
 .catalog-filter-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.catalog-sorting-content {
+  width: 196px;
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+
+.catalog-filter-background {
+  padding: 8px 16px 8px 16px;
+  background: #fcfcfc40;
+  border-radius: 20px;
+}
+
+.range-background {
+  padding: 17px 16px 17px 16px;
+}
+
+.catalog-filter p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.catalog-filter-list {
+  display: flex;
+
 }
 
 /* Каталог продукты */
@@ -1217,13 +1247,16 @@ body {
 
 /* Фильтр и сортировка */
 .catalog-filter-group {
-  width: 196px;
+  min-width: 196px;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  border: none;
 }
 
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
   background-color: #C69BAA;
   border-radius: 2px;
 }
@@ -1275,9 +1308,51 @@ body {
   margin-bottom: 8px;
 }
 
-.catalog-filter-group {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  border: none;
+.fat-content {
+  width: 384px;
+  margin-left: 24px;
+}
+
+.fat-content-background {
+  padding: 8px 24px 8px 24px;
+}
+
+.fillers-background {
+  padding: 10px 24px 10px 24px;
+}
+
+.fillers-content {
+  margin-bottom: 0;
+  margin-right: 16px;
+  width: 604px;
+}
+
+.fillers-button {
+  padding: 8px 52px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+}
+
+.fillers-button:hover {
+  background: #FCFCFC;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+}
+
+.fillers-button:focus {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+  border-radius: 20px;
+}
+
+.fillers-button:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
 }
