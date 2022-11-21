@@ -64,6 +64,56 @@
               <span class="visually-hidden">Корзина</span>
               <span>2</span> товара
             </a>
+            <div class="popover popover-cart">
+              <button class="popover-close-button button">
+                <svg class="popover-cart-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="14" fill="none" viewBox="0 0 15 14">
+                  <path fill="#FCFCFC" fill-rule="evenodd"
+                    d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span class="visually-hidden">Закрыть</span>
+                <span class="popover-amount">2 товара</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <p class="cart-item-title">Малинка<br>
+                      <span class="cart-item-signature">1 кг х 310 ₽</span>
+                    </p>
+                    <p class="cart-item-price">310 ₽</p>
+                    <button type="button" class="cart-item-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd"
+                          d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <p class="cart-item-title cart-item-title-img">Бабл-гам<br>
+                      <span class="cart-item-signature">1,5 кг х 320 ₽</span>
+                    </p>
+                    <p class="cart-item-price">480 ₽</p>
+                    <button type="button" class="cart-item-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd"
+                          d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-item-total">
+                  <button class="cart-item-total-button button" type="button">Оформить заказ</button>
+                  <span class="total">Итого: 790 ₽</span>
+                </div>
+              </div>
+            </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -525,6 +575,42 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-order">
+        <button class="cart-item-button  modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+            <path fill="#2D3440" fill-rule="evenodd"
+              d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group field-form-name">
+              <label class="visually-hidden" for="order-name">Имя и фамилия</label>
+              <input class="input-content order-form-field field" type="text" id="order-name" name="order-name"
+                placeholder="Имя и фамилия">
+            </p>
+
+            <p class="field-group field-form-email">
+              <label class="visually-hidden" for="order-email">email@example.com</label>
+              <input class="input-content order-form-field field" type="email" id="order-email" name="order-email"
+                placeholder="email@example.com">
+            </p>
+
+            <p class="field-group field-form-comment">
+              <label class="visually-hidden" for="order-comment">В свободной форме</label>
+              <input class="input-content input-content-comment order-form-field field" type="text" id="order-comment"
+                name="order-comment" placeholder="В свободной форме">
+            </p>
+            <button class="button subscribe-button appointment-button modal-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
